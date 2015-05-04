@@ -1,0 +1,10 @@
+extends layout
+
+block content
+	h1= title
+	form#formAddUser(name="dbpost",method="post",action="/dbpost")
+		input#inputUserName(type="text", placeholder="username", name="username", autofocus)
+		input#inputUserEmail(type="email", placeholder="email", name="useremail")
+		input#inputUserPassword(type="password", placeholder="password", name="password")
+		input#inputUserPhone(type="text", placeholder="Phonenumber", name="phone")
+		button#btnSubmit(type="submit") submit
